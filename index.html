@@ -24,7 +24,7 @@
                 </div>
             </div>
             <ul class="nav-list">
-                <li class="nav-list-items"><button class="nav-contact">Contact</button></li>
+                <li class="nav-list-items"><a href="#section4" class="nav-contact">Contact</a></li>
             </ul>
         </nav>
         <div class="main-header">
@@ -32,16 +32,16 @@
             <div class="head-title">
                 <h1 class="name-xl">Amin Muhammad.</h1>
                 <p class="position-title">Solar Specialist.</p>
-                <button class="head-contact">Contact</button>
+                <a href="#section4" class="head-contact">Contact</a>
             </div>
         </div>
     </header>
 
-    <section class="section1">
+    <section class="section1 sections">
         <div class="reason-title">
-            <h1>Four reasons to choose momentum</h1>
+            <h1 class="fade-in animate">Four reasons to choose momentum</h1>
         </div>
-        <div class="reason-box">
+        <div class="reason-box animate fade-in">
             <ul class="reason-list">
                 <li class="reason-list-item">
                     <div class="one-stop reason-svg"></div>
@@ -69,33 +69,33 @@
         </div>
     </section>
 
-    <section class="section2">
-        <div class="pic-con-1 sec2-main">
+    <section class="section2 sections">
+        <div class="pic-con-1 sec2-main sec2-pic-1">
             <div class="pic-1"></div>
         </div>
-        <div class="process-con sec2-main">
+        <div class="process-con sec2-main fade-in animate sec2-word-1">
             <h1>Customize Planning that suits you</h1>
             <p>Our experts are ready to draft the perfect solar panel system with your finances in mind.</p>
-            <button class="process-btn">see our process</button>
+            <a href="https://www.momentumsolar.com/solar-plans/" class="process-btn">see our process</a>
         </div>
-        <div class="process-con sec2-main">
+        <div class="process-con sec2-main fade-in animate sec2-word-2">
             <h1>A customer-Centric View sarts with you</h1>
             <p>See how Momentum Solar has changed the lives of homeowners across the nation.</p>
-            <button class="process-btn">read reviews</button>
+            <a href="https://www.momentumsolar.com/customer-reviews/" class="process-btn">read reviews</a>
         </div>
-        <div class="pic-con-1 sec2-main">
+        <div class="pic-con-1 sec2-main sec2-pic-2">
             <div class="pic-2">
             </div>
         </div>
     </section>
 
-    <section class="section3">
-        <div class="sec3-sub1">
+    <section class="section3 sections">
+        <div class="sec3-sub1 fade-in animate">
             <h1>You're In Good Company</h1>
             <p>Momentum Solar is highly rated by some of the most respected organizations in the world.</p>
         </div>
         <div class="sec3-sub2">
-            <ul class="marquee">
+            <ul class="marquee fade-in animate">
                 <li class="marquee-items"><img src="./images/angies-accolade-logo.svg" alt=""></li>
                 <li class="marquee-items"><img src="./images/BBB-accolade-logo.svg" alt=""></li>
                 <li class="marquee-items"><img src="./images/deloitte-logo.svg" alt=""></li>
@@ -125,11 +125,11 @@
         </div>
     </section>
 
-    <section class="section4">
-        <div class="sec4-sub1">
+    <section class="section4 sections " id="section4">
+        <div class="sec4-sub1 fade-in animate">
             <h1>Contact Amin</h1>
         </div>
-        <div class="sec4-sub2">
+        <div class="sec4-sub2 fade-in animate">
             <form onsubmit="sendEmail(); reset(); return false;">
             <div class="dbl-field">
                 <div class="field">
@@ -165,5 +165,6 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script src="js/contact.js"></script>
+    <script src="/js/animation.js"></script>
 </body>
 </html>

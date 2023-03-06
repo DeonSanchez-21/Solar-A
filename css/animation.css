@@ -1,0 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 0.75s ease-in;
+    transition-delay: 0.4s;
+}
+
+.animate.slide{
+    opacity: 1;
+}

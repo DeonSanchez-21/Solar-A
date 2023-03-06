@@ -8,7 +8,8 @@
 }
 
 header{
-    height: 80vh;
+    height: auto;
+    padding-bottom: 10rem;
     width: 100%;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     background-image: url(/images/headerpic2.jpg);
@@ -17,12 +18,14 @@ header{
 }
 
 .nav-bar{
+    height: 10%;
     width: 100%;
     display: flex;
+    z-index: 9999;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    position: fixed;
+    position: absolute;
 }
 .t1{
     font-size: 1.4rem;
@@ -59,10 +62,12 @@ header{
 .nav-contact{
     padding: 1rem 3rem;
     border-radius: 5px;
+    margin-top: 0.5rem;
     border: none;
     background-color: rgb(72,94,228);
     color: whitesmoke;
     transition: all 0.25s;
+    z-index: 999999999;
     font-size: 1.1rem;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
@@ -118,11 +123,14 @@ header{
     border: none;
     border-radius: 5px;
     margin: 1.5rem;
+    z-index: 9999;
     margin-top: 0.5rem;
     color: whitesmoke;
     background-color: rgb(72,94,228);
     transition: all 0.2s;
     font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
 }
 
 .head-contact:hover{
@@ -141,7 +149,6 @@ header{
     height: 7rem;
     background-size: cover;
     margin: auto;
-
 }
 
 .convenience{
@@ -163,7 +170,7 @@ header{
 .reason-title{
     width: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .reason-title h1{
     margin-top: 0.5;
@@ -171,6 +178,7 @@ header{
     text-transform: capitalize;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    padding: 1rem;
 }
 
 .reason-box{
@@ -189,7 +197,7 @@ header{
     margin: 1rem;
     text-align: center;
     list-style-type: none;
-    width: 22%;
+    width: 20%;
     min-height: 25rem;
 }
 .reason-list-item i{
@@ -198,15 +206,16 @@ header{
 }
 
 .reason-titles{
-    padding: 1.2rem;
-    font-size: 1.7rem;
-    height: 8rem;
+    padding: 1.2rem 0;
+    font-size: 1.5rem;
+    height: 6rem;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
 .reason-info{
     font-size: 1.2rem;
+    text-align: center;
     font-weight: lighter;
     line-height: 1.75rem;
     font-family: 'Open Sans', sans-serif;
@@ -221,12 +230,12 @@ header{
 }
 .sec2-main{
     width: 50%;
-    height: 100vh;
+    height: auto;
 }
 
 .pic-1{
     width: 90%;
-    height: 90vh;
+    height: 400px;
     margin: auto;
     background-image: url(/images/sven-mieke-fteR0e2BzKo-unsplash.jpg);
     background-size: cover;
@@ -235,7 +244,7 @@ header{
 }
 .pic-2{
     width: 90%;
-    height: 90vh;
+    height: 400px;
     margin: auto;
     background-image: url(/images/bill-mead-wmaP3Tl80ww-unsplash.jpg);
     background-size: cover;
@@ -266,6 +275,11 @@ header{
 }
 .process-btn{
     width: 12rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3rem;
     border: none;
     border-radius: 8px;
@@ -299,6 +313,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     margin-bottom: 4rem;
+    padding: 1rem;
 }
 
 .sec3-sub2{
@@ -336,12 +351,13 @@ header{
     justify-content: center;
     margin: 3rem;
     flex-direction: column;
-    min-height: 100vh;
+    padding-top: 10rem;
 }
 
 .dbl-field{
     display: flex;
-    width: 100%;
+    justify-content: center;
+    max-width: 100%;
     flex-wrap: wrap;
 }
 .field{
@@ -367,9 +383,10 @@ header{
 }
 
 .message{
-    width: 52rem;
+    max-width: 52rem;
     margin: 1rem;
 }
+
 .message textarea{
     min-height: 120px;
     max-height: 260px;
@@ -414,9 +431,75 @@ header{
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    text-align: center;
 }
 
+@media all and (max-width: 1000px) {
+    .reason-list-item{
+        width: 33%;
+    }
 
+    .sec2-main{
+        width: 75%;
+        
+    }
+
+    .sec2-pic-2{
+        margin-left: 25%;
+        min-height: auto;
+    }
+
+    .sec2-word-1{
+        margin-left: 20%;
+    }
+
+    .sec2-word-2{
+        padding-left: 7%;
+    }
+
+    .process-con{
+        height: 400px;
+    }
+
+    .section3{
+        margin-top: 3rem;
+    }
+
+    .dbl-field .field{
+        width: 100%;
+    }
+    .section4{
+        padding-top: 3rem ;
+    }
+}
+@media all and (max-width: 750px) {
+    .main-header{
+        flex-direction: column;
+    }
+    .head-title{
+        text-align: center;
+    }
+    .reason-list-item{
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 600px){
+    .process-con{
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pic-con-1{
+        width: 90%;
+        margin: auto;
+    }
+}
 
 
 
